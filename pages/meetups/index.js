@@ -1,4 +1,4 @@
-const Page = () => {
+const MeetupsPage = () => {
   return (
     <div>
 
@@ -21,4 +21,5 @@ const Page = () => {
   )
 }
 
-export default Page
+export default MeetupsPage
+
