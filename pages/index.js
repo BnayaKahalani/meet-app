@@ -42,10 +42,11 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  // const { events_categories } = await import('/data/data.json');
+  const { meetups_categories } = await import('/data/data.json');
+
   return {
     props: {
-      data: "hello",
+      data: meetups_categories,
     },
   };
 }
