@@ -20,7 +20,7 @@ export default function Home({ data }) {
       </header>
 
       <main>
-        <h1>{data}</h1>
+        <h1>Hello</h1>
         <a href="/meetups/jerusalem">
           <img src="" alt="" />
           <h2>Meetups in Jerusalem</h2>

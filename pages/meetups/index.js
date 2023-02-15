@@ -9,6 +9,7 @@ const MeetupsPage = ({ data }) => {
         }>
           <img src={m.image} alt={m.title} width={300} />
           <h2>{m.title}</h2>
+          <p>{m.description}</p>
         </a>
       ))
       }
@@ -20,7 +21,6 @@ export default MeetupsPage
 
 export async function getStaticProps() {
   const { meetups_categories } = await import('data/data.json')
-  console.log('meetups_categories:', meetups_categories)
 
   return {
     props: {
