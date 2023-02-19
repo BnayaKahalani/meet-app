@@ -1,11 +1,16 @@
-const MeetupsCatPage = () => {
+import Image from 'next/image';
+
+const MeetupsCatPage = ({ data }) => {
   return (
     <div>
-      <h1>Meetups in Jerusalem</h1>
-      <a href="/meetups/jerusalem/meetup1">Meetup 1</a>
-      <a href="/meetups/meetup2">Meetup 2</a>
-      <a href="/meetups/meetup3">Meetup 3</a>
-      <a href="/meetups/meetup4">Meetup 4</a>
+      {data.map(m => (
+        <a key={m.id} href={`/meetups/${m.city}/${m.id}`}>
+          <Image src={m.image} alt={m.title} width={600} height={400} />
+          <h2>{m.title}</h2>
+          <p>{m.description}</p>
+        </a>
+      ))
+      }
     </div>
   )
 }
@@ -39,6 +44,6 @@ export async function getStaticProps(context) {
 
 
   return {
-    props: {}
+    props: { data }
   }
 }
