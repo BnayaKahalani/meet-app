@@ -15,19 +15,19 @@ export default function Home({ data }) {
       <header>
         <nav>
           <img src="" alt="" />
-          <a href="/">Home</a>
-          <a href="/meetups">Meetups</a>
-          <a href="/about-us">About Us</a>
+          <Link href="/">Home</Link>
+          <Link href="/meetups">Meetups</Link>
+          <Link href="/about-us">About Us</Link>
         </nav>
       </header>
 
       <main>
         {data.map(m =>
-          <a key={m.id} href={`/meetups/${m.id}`}>
+          <Link key={m.id} href={`/meetups/${m.id}`}>
             <Image src={m.image} alt={m.title} width={600} height={400} />
             <h2>{m.title}</h2>
             <p>{m.description}</p>
-          </a>)}
+          </Link>)}
       </main>
     </div>
   );

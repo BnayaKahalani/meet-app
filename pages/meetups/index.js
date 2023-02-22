@@ -1,16 +1,16 @@
-import React from 'react';
+import Link from 'next/link'
 
 const MeetupsPage = ({ data }) => {
   return (
     <div>
       <h1>Meetups Page</h1>
       {data.map((m) => (
-        < a key={m.id} href={`/meetups/${m.id}`
+        < Link key={m.id} href={`/meetups/${m.id}`
         }>
           <img src={m.image} alt={m.title} width={300} />
           <h2>{m.title}</h2>
           <p>{m.description}</p>
-        </a>
+        </Link>
       ))
       }
     </div >
