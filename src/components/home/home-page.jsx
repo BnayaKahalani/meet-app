@@ -6,17 +6,22 @@ export const HomePage = ({ data }) => (
     <main>
       {data.map((m) => (
         <Link
+          className='card'
           key={m.id}
           href={`/meetups/${m.id}`}
         >
-          <Image
-            src={m.image}
-            alt={m.title}
-            width={600}
-            height={400}
-          />
-          <h2>{m.title}</h2>
-          <p>{m.description}</p>
+          <div className='image'>
+            <Image
+              src={m.image}
+              alt={m.title}
+              width={600}
+              height={400}
+            />
+          </div>
+          <div className='content'>
+            <h2>{m.title}</h2>
+            <p>{m.description}</p>
+          </div>
         </Link>
       ))}
     </main>
