@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const HomePage = ({ data }) => (
-  <div className='home'>
+  <div className='home_body'>
     <main>
       {data.map((m) => (
         <Link
@@ -14,7 +14,7 @@ export const HomePage = ({ data }) => (
             <Image
               src={m.image}
               alt={m.title}
-              width={600}
+              width={500}
               height={400}
             />
           </div>

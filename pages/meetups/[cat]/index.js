@@ -1,23 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import CatMeetup from '../../../src/components/meetups/catMeetup';
 
-const MeetupsCatPage = ({ data, pageName }) => {
-  return (
-    <div>
-      <h1>Meetups in {pageName}</h1>
-      {data.map(m => (
-        <Link key={m.id} href={`/meetups/${m.city}/${m.id}`} passHref>
-          <Image src={m.image} alt={m.title} width={600} height={400} />
-          <h2>{m.title}</h2>
-          <p>{m.description}</p>
-        </Link>
-      ))
-      }
-    </div>
-  )
-}
+const MeetupCatPage = ({ data, pageName }) => <CatMeetup data={data} pageName={pageName} />;
 
-export default MeetupsCatPage
+export default MeetupCatPage;
 
 export async function getStaticPaths() {
   const { meetups_categories } = await import('data/data.json')

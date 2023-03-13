@@ -44,23 +44,26 @@ main
   padding: 80px 30px
   min-height: 550px
 
-.home_page
+.home_body
   display: flex
   flex-direction: column
   gap: 50px
   .image
-    width: 40%
+    width: 100%
   .card
     display: flex
     flex-direction: row
-    gap: 30px
+    gap: 10px
     justify-content: center
     align-content: center
     align-items: center
+    margin-bottom: 20px
     &:nth-child(even)
       direction: rtl
     .content
       width: 50%
+      &:nth-child(even) 
+        direction: ltr
 
 .about_us_list
   display: flex

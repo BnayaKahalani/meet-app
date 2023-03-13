@@ -1,16 +1,8 @@
-import Image from 'next/image'
+import SingleMeetup from '../../../src/components/meetups/single-meetup';
 
-const MeetupPage = ({ data }) => {
-  return (
-    <div>
-      <Image src={data.image} alt={data.title} width={600} height={400} />
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
-    </div>
-  )
-}
+const MeetupPage = ({ data }) => <SingleMeetup data={data} />;
 
-export default MeetupPage
+export default MeetupPage;
 
 export async function getStaticPaths() {
   const data = await import('/data/data.json')

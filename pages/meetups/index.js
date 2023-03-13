@@ -3,7 +3,6 @@ import Link from 'next/link'
 const MeetupsPage = ({ data }) => {
   return (
     <div>
-      <h1>Meetups Page</h1>
       {data.map((m) => (
         < Link key={m.id} href={`/meetups/${m.id}`
         }>

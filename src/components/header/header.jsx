@@ -19,7 +19,7 @@ const Header = () => (
                 href='/meetups'
                 passHref
               >
-                Events
+                Meetups
               </Link>
             </li>
             <li>
