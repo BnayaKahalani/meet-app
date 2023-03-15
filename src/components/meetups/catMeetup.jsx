@@ -5,7 +5,7 @@ import Link from "next/link"
 const CatMeetup = ({ data, pageName }) => {
   return (
     <div className='cat_meetups'>
-      <h1>Meetups in {pageName}</h1>
+      <h1>Meetups in {pageName.charAt(0).toUpperCase() + pageName.slice(1)}</h1>
       <div className='content'>
         {data.map((m) => (
           <Link

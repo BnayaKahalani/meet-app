@@ -1,5 +1,5 @@
 export const Footer = () => (
   <footer>
-    <p> © 2022 Time to Code - A Project Built with Next.js </p>
+    <p> Coffeerights 2022 - Built with Next.js </p>
   </footer>
 )
