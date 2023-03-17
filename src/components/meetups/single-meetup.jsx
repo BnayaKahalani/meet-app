@@ -10,7 +10,7 @@ const SingleMeetup = ({ data }) => {
   const onSubmit = async (e) => {
     e.preventDefault()
     const emailValue = inputEmail.current.value
-    const eventId = router?.query.id
+    const meetupId = router?.query.id
 
     const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
