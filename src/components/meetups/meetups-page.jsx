@@ -11,13 +11,15 @@ const AllMeetups = ({ data }) => {
           href={`/meetups/${m.id}`}
           passHref
         >
-          <Image
-            src={m.image}
-            alt={m.title}
-            width={500}
-            height={500}
-          />{" "}
-          <h2>{m.title} </h2>
+          <div className='card'>
+            <Image
+              src={m.image}
+              alt={m.title}
+              width={350}
+              height={350}
+            />{" "}
+            <h2>{m.title} </h2>
+          </div>
         </Link>
       ))}
     </div>
