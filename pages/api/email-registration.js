@@ -16,7 +16,7 @@ export default function handler(req, res) {
   const { method } = req
 
   const filePath = bulidPath()
-  const { meetups_categories, all_meetups } = extractData(filePath)
+  const { meetups_categories, allMeetups } = extractData(filePath)
 
   if (!AllMeetups) {
     return res.status(404).json({
@@ -28,7 +28,7 @@ export default function handler(req, res) {
   if (method === "POST") {
     const { email, meetupId } = req.body
 
-    const newAllMeetups = AllMeetups.map(m => {
+    const newAllMeetups = allMeetups.map(m => {
       if (m.id === meetupId) {
         if (m.emails_registered.includes(email)) {
           res.status(201).json({ message: 'This email has already been registered' })
@@ -40,7 +40,7 @@ export default function handler(req, res) {
       return m
     })
 
-    fs.writeFileSync(filePath, JSON.stringify({ meetups_categories, AllMeetups: newAllMeetups }))
+    fs.writeFileSync(filePath, JSON.stringify({ meetups_categories, allMeetups: newAllMeetups }))
 
     res.status(200).json({ message: `You have been successfully registered with the email: ${email}` })
 
