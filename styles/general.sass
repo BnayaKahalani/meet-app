@@ -48,8 +48,15 @@ main
   flex-direction: column
   gap: 50px
 
+  @media (max-width:900px)
+    flex-direction: row
+
   .image
     width: 100%
+
+    @media (max-width:900px)
+        width: auto
+        margin: 5px
 
   .card
     display: flex
@@ -59,8 +66,15 @@ main
     align-content: center
     align-items: center
     margin-bottom: 20px
+
+    @media (max-width:900px)
+        flex-direction: column
+
     &:nth-child(even)
       direction: rtl
+
+      @media (max-width:900px)
+        direction: ltr
     .content
       width: 50%
       &:nth-child(even) 
@@ -75,6 +89,8 @@ main
   flex-direction: row
   flex-wrap: wrap
   gap: 20px
+  justify-content: center
+  align-items: center
   .card
     position: relative
     h2
