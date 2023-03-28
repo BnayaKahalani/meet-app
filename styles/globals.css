@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+
+  @media (max-width: 900px) {
+    object-fit: contain;
+  }
+}
