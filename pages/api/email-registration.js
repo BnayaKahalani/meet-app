@@ -28,9 +28,8 @@ export default function handler(req, res) {
   if (method === "POST") {
     const { email, meetupId } = req.body
 
-    if (!email | !email.include('@')) {
+    if (!email | !email.includes('@')) {
       res.status(422).json({ message: 'Invalid email address' })
-      return
     }
 
     const newAllMeetups = allMeetups.map(m => {
