@@ -51,13 +51,15 @@ const SingleMeetup = ({ data }) => {
         className='email_registration'
       >
         <label> Get Registered for this meetup!</label>
-        <input
-          ref={inputEmail}
-          type='email'
-          id='email'
-          placeholder='Please insert your email here'
-        />
-        <button type='submit'> Submit</button>
+        <div className='email-input'>
+          <input
+            ref={inputEmail}
+            type='email'
+            id='email'
+            placeholder='Please insert your email here'
+          />
+          <button type='submit'> Submit</button>
+        </div>
       </form>
       <p>{message}</p>
     </div>

@@ -1,4 +1,4 @@
-# MeetUp - A Next.js
+# MeetUp - A Next.js Project
 
 I built this project in order to get familiar with Next.js framework, as it's an officially-recommended tool in React documentation.
 
