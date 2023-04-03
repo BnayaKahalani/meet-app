@@ -4,7 +4,7 @@ I built this project in order to get familiar with Next.js framework, as it's an
 
 <a href="">Click here to see the result.</a>
 
-Tools I used: Next.js & Sass.
+Tools I used: Next.js & SASS.
 
 Here are some photos of the final product:
 
@@ -19,3 +19,11 @@ Here are some photos of the final product:
    <br/>
 
 ## What I Learned from this Project?
+
+Building my first Next.js project was an exciting experience for me. I found the framework to be quite intuitive and easy to work with.
+
+I learned about its main features: Server-side rendering / static site generation, automatic code splitting and hot module replacement and API routes.
+
+Overall, I found Next.js to be a powerful and flexible framework that allowed me to build fast, SEO-friendly web applications with ease.
+
+In addition, I had the chance to implement SASS syntax in this project. While I personally prefer the expressiveness and syntax-oriented method of SCSS, I was happy to have the opportunity to work with SASS syntax in this project.
