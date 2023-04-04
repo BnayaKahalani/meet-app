@@ -2,7 +2,7 @@
 
 I built this project in order to get familiar with Next.js framework, as it's an officially-recommended tool in React documentation.
 
-<a href="">Click here to see the result.</a>
+<a href="https://meet-ppnp3htdh-bnayakahalani.vercel.app/">Click here to see the result.</a>
 
 Tools I used: Next.js & SASS.
 
