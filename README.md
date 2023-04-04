@@ -22,7 +22,7 @@ Here are some photos of the final product:
 
 Building my first Next.js project was an exciting experience for me. I found the framework to be quite intuitive and easy to work with.
 
-I learned about its main features: Server-side rendering / static site generation, automatic code splitting and hot module replacement and API routes.
+I learned about its main features: Server-side rendering / static site generation, automatic code splitting and hot module replacement and API routes. It's worth mentioning that this project was built with the classic way of using Next.js, as opposed to the newer method introduced in Next.js 13, so in my future projects I'll try the latter as well.
 
 Overall, I found Next.js to be a powerful and flexible framework that allowed me to build fast, SEO-friendly web applications with ease.
 
